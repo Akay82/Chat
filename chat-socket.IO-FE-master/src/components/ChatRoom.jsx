@@ -15,7 +15,7 @@ const ChatRoom = () => {
     const [ socket, setSocket ] = useState()
 
     useEffect(() => {
-        const socket = io("http://localhost:3000")
+        const socket = io("https://chat-bjs5.onrender.com")
         setSocket(socket)
 
         socket.on("connect", () => {
