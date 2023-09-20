@@ -22,7 +22,7 @@ const ChatRoom = () => {
             console.log("socket Connected")
             socket.emit("joinRoom", location.state.room)
         })        
-    }, [location])
+    }, [])
 
     useEffect(() => {
         if(socket){
