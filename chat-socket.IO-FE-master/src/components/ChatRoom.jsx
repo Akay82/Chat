@@ -15,7 +15,7 @@ const ChatRoom = () => {
     const [ socket, setSocket ] = useState()
 
     useEffect(() => {
-        const socket = io("http://localhost:10000")
+        const socket = io("http://localhost:3000")
         setSocket(socket)
 
         socket.on("connect", () => {
