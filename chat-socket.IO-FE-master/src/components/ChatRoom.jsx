@@ -15,7 +15,7 @@ const ChatRoom = () => {
     const [ socket, setSocket ] = useState()
 
     useEffect(() => {
-        const socket = io("https://react-chat-9a10.onrender.com")
+        const socket = io("http://localhost:10000")
         setSocket(socket)
 
         socket.on("connect", () => {
