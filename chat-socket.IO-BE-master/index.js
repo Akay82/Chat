@@ -29,8 +29,10 @@ io.on("connection", (socket) => {
         io.in(room).emit("getLatestMessage", newMessage)
     })
 
+    
+
 });
 
-const port = process.env.PORT || port
+const port = "https://react-chat-9a10.onrender.com"
 
 server.listen(port, console.log(`App started at port ${port}`))
