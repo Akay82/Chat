@@ -33,6 +33,6 @@ io.on("connection", (socket) => {
 
 });
 
-const port = "https://react-chat-9a10.onrender.com"
+const port = process.env.PORT || port
 
 server.listen(port, console.log(`App started at port ${port}`))
