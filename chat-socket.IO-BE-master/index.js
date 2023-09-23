@@ -10,7 +10,7 @@ var server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://react-chat-9a10.onrender.com",
         methods: ["GET", "POST"]
     }
 });
@@ -31,6 +31,6 @@ io.on("connection", (socket) => {
 
 });
 
-const port = process.env.PORT || 9000
+const port = process.env.PORT || port
 
 server.listen(port, console.log(`App started at port ${port}`))
