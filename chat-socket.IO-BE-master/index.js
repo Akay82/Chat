@@ -10,7 +10,7 @@ var server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://react-chat-9a10.onrender.com",
+        origin: "https://admirable-fenglisu-a47c99.netlify.app/",
         methods: ["GET", "POST"]
     }
 });
